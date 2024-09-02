@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="background">
+    <div class="form">
+      <h2>Job Application Form</h2>
+
+      <form action="#" method="post">
+        <div>
+          <label for="firstName">First Name</label> <br>
+          <input type="text" name="firstName" id="firstName" class="formInputs" placeholder="Enter First Name...">
+        </div>
+
+        <div>
+          <label for="lastName">Last Name</label> <br>
+          <input type="text" name="lastName" id="lastName" class="formInputs" placeholder="Enter Last Name...">
+        </div>
+
+        <div>
+          <label for="email">Email</label> <br>
+          <input type="email" name="email" id="email" class="formInputs" placeholder="Enter Email...">
+        </div>
+
+        <div>
+          <label for="role">Job Role</label> <br>
+          <select name="jobRole" id="role" class="formInputs">
+            <option value="Software Developer" >Software Developer</option>
+            <option value="Quality Assurance Engineer" >Quality Assurance</option>
+            <option value="Physics Tutor" >Physics Tutor</option>
+          </select>
+        </div>
+
+        <div id="EnterAddress">
+          <label for="Address">Enter Address</label> <br>
+          <textarea name="Address" id="Address" class="formInputs" placeholder="Enter Address..."></textarea>
+        </div>
+
+        <div>
+          <label for="city">City</label> <br>
+          <input type="text" name="city" id="city" class="formInputs" placeholder="Enter City...">
+        </div>
+
+        <div>
+          <label for="Pincode">Pincode</label> <br>
+          <input type="text" name="Pincode" id="Pincode" class="formInputs" placeholder="Enter Pincode...">
+        </div>
+        
+        <div>
+          <label for="date">Start Date</label> <br>
+          <input type="date" name="date" id="date" class="formInputs" >
+        </div>
+        
+        <div>
+          <label for="resume">Upload Resume</label> <br>
+          <input type="file" name="resume" id="resume" class="formInputs" accept=".pdf">
+        </div>
+        
+        <div id="submitButton">
+          <input type="submit" id="submit"  value="Apply Now">
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-color: rgba(195, 195, 195, 0.606);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.form {
+    border-radius: 50px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    background-color: white;
+    padding: 2%;
+}
+
+.form h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+form div {
+    margin-bottom: 20px;
+    width: 48%;
+}
+
+label {
+    display: inline-block;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.formInputs {
+    width: 100%;
+    min-height: 30px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding: 5px;
+}
+
+.formInputs:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+#EnterAddress {
+    width: 100%;
+}
+
+textarea {
+    height: 60px !important; 
+    resize: none;
+}
+
+#submitButton {
+    margin-top: 30px;
+    width: 100%;
+    text-align: end;
+}
+
+#submit {
+    width: 100px;
+    padding: 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: darkred;
+}
+
+@media only screen and (max-width: 1024px) {
+    .form {
+        min-width: 95%;
+    }
+
+    label {
+        font-size: 30px;
+    }
+
+    .formInputs {
+        height: auto;
+        font-size: 25px;
+    }
+
+    form div {
+        margin-bottom: 30px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 769px) {
+
+    label {
+        font-size: 1.25rem;
+    }
+
+    .formInputs {
+        font-size: 1.25rem;
+    }
+
+    form div {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .form {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    form {
+        display: block;
+    }
+
+    .form h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    form div {
+        width: 100%;
+    }
+
+    .formInputs {
+        height: auto;
+        font-size: 1rem;
+    }
+
+    
+}
